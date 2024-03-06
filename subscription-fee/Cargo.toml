@@ -1,0 +1,36 @@
+[package]
+name = "subscription-fee"
+version = "0.0.0"
+authors = ["you"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=0.13.4"
+features = ["dct-token-payment-legacy-decode"]
+
+[dependencies.dharitri-sc-modules]
+version = "=0.13.4"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+hex-literal = "0.3.4"
+
+[dependencies.common_structs]
+path = "../common/common_structs"
+
+[dev-dependencies.pair]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.pausable]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=0.13.4"

@@ -1,0 +1,16 @@
+[package]
+name = "common_structs"
+version = "0.0.0"
+authors = ["Dharitri <contact@dharitri.com>"]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=0.13.4"
+features = ["dct-token-payment-legacy-decode"]
+
+[dependencies.mergeable]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"

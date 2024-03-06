@@ -1,0 +1,77 @@
+[package]
+name = "farm-boosted-rewards-subscriber"
+version = "0.0.0"
+authors = ["you"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=0.13.4"
+
+[dependencies.dharitri-sc-modules]
+version = "=0.13.4"
+
+[dependencies.subscription-fee]
+path = "../subscription-fee"
+
+[dependencies.common_subscriber]
+path = "../common/common_subscriber"
+
+[dependencies.common_structs]
+path = "../common/common_structs"
+
+[dependencies.energy-query]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dependencies.energy-factory]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dependencies.pair]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dependencies.farm-with-locked-rewards]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dependencies.config]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+hex-literal = "0.3.4"
+
+[dev-dependencies.farm-boosted-yields]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.pausable]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.farm_token]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.sc_whitelist_module]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.simple-lock]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.locking_module]
+git = "https://github.com/Dharitri-org/drt-exchange-sc"
+rev = "791b128"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=0.13.4"
